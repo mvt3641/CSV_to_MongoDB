@@ -1,9 +1,13 @@
 // var mongojs = require('mongojs');
 var express = require('express');
-var fs = require('fs');
+// var fs = require('fs');
 var mongoose = require('mongoose');
+var fileUpload =require('express-fileUpload')
+
+
 //Intialize express
 var app = express();
+app.use(fileUpload());
 
 PORT = 3500
 
@@ -22,7 +26,7 @@ mongoose.connect("mongodb://localhost/flightdata", {
   // useMongoClient: true
 }).then(function(err){
   if (err) throw err;
-console.log("connected databse");
+console.log("database connected");
 });
 
 //If error on database throw err
@@ -46,18 +50,24 @@ app.get('/all', function(req,res){
 //   console.log(err);
 // } else {
 //   res.json(found);
-fs.readFile('Asitrep.csv','utf8', function(error,data){
-  if(error){
-  console.log(error);
-}
-res.json(data);
-})
+// fs.readFile('Asitrep.csv','utf8', function(error,data){
+//   if(error){
+//   console.log(error);
+// }
+// res.json(data);
+// })
 });
 
 
 app.get("/", function(req, res) {
-  res.send("Hello world");
+  res.sendFile(__dirname + '/index.html');
 });
+
+var template = require('./template.js');
+app.get('/template', template.get);
+
+var upload = require('./upload.js');
+app.post('/', upload.post);
 
 
 app.listen(PORT, function(){

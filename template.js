@@ -10,7 +10,7 @@ var fields =[
 'site_ID',
 'time',
 'system_ST',
-'flight',
+'flight_ST',
 'reason',
 'launches',
 'recoveries',
@@ -24,7 +24,7 @@ var fields =[
  'barometer'
 ];
 
-var csv = json2csv({data: '', fields:field});
+var csv = json2csv({data: '', fields:fields});
 
 res.set("Content-Disposition", "attachment;filename=sitrep.csv");
 res.set("Content-Type", "application/octet-stream");
