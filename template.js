@@ -25,7 +25,8 @@ var fields =[
 ];
 
 var csv = json2csv({data: '', fields:fields});
-
+// var csv = json2csv.parse({data:'', fields: fields});
+   // var csv = json2csv.parse({fields: fields});
 res.set("Content-Disposition", "attachment;filename=sitrep.csv");
 res.set("Content-Type", "application/octet-stream");
 

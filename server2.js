@@ -21,12 +21,18 @@ PORT = 3500
 // Connecting MongoDB to database and collection table
 // var db = mongojs(databaseUrl, collections);
 
+
 mongoose.Promise = Promise;
+// mongoose.connect("mongodb://localhost/flightdata",{
+//   options: serverOptions
+// })
 mongoose.connect("mongodb://localhost/flightdata", {
-  // useMongoClient: true
-}).then(function(err){
-  if (err) throw err;
-console.log("database connected");
+// socketTimeoutMS: 6000000,
+// keepAlive: true
+}
+)
+.then(function(){
+console.log("database connected..");
 });
 
 //If error on database throw err
