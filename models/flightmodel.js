@@ -18,8 +18,8 @@ var flightSchema = mongoose.Schema({
   site_ID: {
     type:String
   },
-  hour:{
-    type: Number
+  time: {
+    type: {}
   },
   system_ST: {
     type: String
