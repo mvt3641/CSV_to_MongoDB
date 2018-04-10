@@ -27,7 +27,7 @@ mongoose.Promise = Promise;
 //   options: serverOptions
 // })
 mongoose.connect("mongodb://localhost/flightdata", {
-socketTimeoutMS: 60000,
+// socketTimeoutMS: 60000,
 // keepAlive: true
 }
 )

@@ -18,8 +18,8 @@ var flightSchema = mongoose.Schema({
   site_ID: {
     type:String
   },
-  hour:{
-    type: Number
+  time: {
+    type: {}
   },
   system_ST: {
     type: String
@@ -31,22 +31,28 @@ var flightSchema = mongoose.Schema({
     type: String
   },
   launches: {
-    type: Number
+    type: Number,
+    default: 0
   },
   recoveries: {
-    type: Number
+    type: Number,
+    default: 0
   },
   flight: {
-    type: Number
+    type: Number,
+    default: 0
   },
   tension: {
-    type: Number
+    type: Number,
+    default: 0
   },
   winds_Aloft:{
-  type: Number
+  type: Number,
+  default: 0
   },
   pitch:{
-    type: Number
+    type: Number,
+    default: 0
   },
   helium:{
     type: Number
