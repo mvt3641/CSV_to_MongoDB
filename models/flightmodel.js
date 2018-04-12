@@ -6,7 +6,7 @@ var flightSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
 
   date: {
-    type: {},
+    type: {}
   },
 
   month: {
@@ -55,6 +55,9 @@ var flightSchema = mongoose.Schema({
     type: Number
   },
   ground_Winds:{
+    type: Number
+  },
+  ground_Temp:{
     type: Number
   },
   barometer: {

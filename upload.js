@@ -31,8 +31,8 @@ exports.post = function (req, res) {
 	 .on("end", function(){
 		 flight.create(flightdata, function(err, documents) {
 			if (err) throw err;
-				console.log(flightdata.length + ' files have been successfully uploaded.');
-			res.send(flightdata.length + ' files have been successfully uploaded.');
+				console.log(flightdata.length + ' files have been successfully uploaded..');
+			res.send(flightdata.length + ' files have been successfully uploaded..');
 		  });
 	 });
 };

@@ -21,6 +21,7 @@ var fields =[
 'helium',
 'ballonet',
 'ground_Winds',
+'ground_Temp',
  'barometer'
 ];
 

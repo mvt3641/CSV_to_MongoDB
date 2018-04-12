@@ -32,7 +32,7 @@ socketTimeoutMS: 60000,
 }
 )
 .then(function(){
-console.log("database connected..");
+console.log("database connected...");
 });
 
 //If error on database throw err

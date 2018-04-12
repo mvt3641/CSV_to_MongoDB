@@ -1,4 +1,4 @@
-date,month,aerostat_SN,site_ID,time,system_ST,flight_ST,reason,launches,recoveries,flights,tension,winds_Aloft,pitch,helium,ballonet,ground_Winds,barometer,
+date,month,aerostat_SN,site_ID,time,system_ST,flight_ST,reason,launches,recoveries,flights,tension,winds_Aloft,pitch,helium,ballonet,ground_Winds,ground_Temp,barometer,
 1-Jan-16,1,M007278,Site 7,0:00,FMC,0,WX,,,,,,,3.3,3.4,0,50,30
 1-Jan-16,1,M007278,Site 7,1:00,FMC,0,WX,,,,,,,3.2,3.3,4,50,30
 1-Jan-16,1,M007278,Site 7,2:00,FMC,0,WX,,,,,,,3.1,3.2,3,50,30
