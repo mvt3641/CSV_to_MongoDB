@@ -2,12 +2,14 @@
 var express = require('express');
 // var fs = require('fs');
 var mongoose = require('mongoose');
-var fileUpload =require('express-fileUpload')
+var fileUpload =require('express-fileUpload');
+var logger = require('morgan');
 
 
 //Intialize express
 var app = express();
 app.use(fileUpload());
+app.use(logger("dev"));
 
 PORT = 3500
 
