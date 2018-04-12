@@ -63,6 +63,9 @@ var flightSchema = mongoose.Schema({
   ground_Winds:{
     type: Number
   },
+  ground_Temp:{
+    type: Number
+  },
   barometer: {
     type: Number
   }
