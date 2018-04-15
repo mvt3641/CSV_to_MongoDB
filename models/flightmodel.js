@@ -8,7 +8,6 @@ var flightSchema = mongoose.Schema({
   date: {
     type: {}
   },
-
   month: {
     type: Number
   },
@@ -32,27 +31,24 @@ var flightSchema = mongoose.Schema({
   },
   launches: {
     type: Number,
-    default: 0
+    validate: if(null){
+      return 0
+    }
   },
   recoveries: {
-    type: Number,
-    default: 0
+    type: Number
   },
   flight: {
-    type: Number,
-    default: 0
+    type: Number
   },
   tension: {
-    type: Number,
-    default: 0
+    type: Number
   },
   winds_Aloft:{
-  type: Number,
-  default: 0
+  type: Number
   },
   pitch:{
-    type: Number,
-    default: 0
+    type: Number
   },
   helium:{
     type: Number
