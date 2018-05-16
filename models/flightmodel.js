@@ -30,10 +30,8 @@ var flightSchema = mongoose.Schema({
     type: String
   },
   launches: {
-    type: Number,
-    validate: if(null){
-      return 0
-    }
+    type: Number
+
   },
   recoveries: {
     type: Number
