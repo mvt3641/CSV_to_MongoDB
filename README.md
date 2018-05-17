@@ -1,3 +1,3 @@
 # CSV to MongoDB
 
-upload CSV files to MongoDB for Query
+Upload CSV files to MongoDB for Query
